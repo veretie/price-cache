@@ -73,6 +73,7 @@ This version implements MVP requirements with design tailored for anticipated sc
 
 #### Pre-requisites 
  * JDK 10+ (required to compile `var` type inference)
+ * IntelliJ [Lombok plugin](https://plugins.jetbrains.com/plugin/6317-lombok) (if running from IDE) 
 
 #### Start application locally 
 
