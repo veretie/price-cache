@@ -56,12 +56,12 @@ This version implements MVP requirements with design tailored for anticipated sc
  * Lombok (auto generated getters/setter/builders for POJOs)
  
 #### Technical notes
- * To push uniform-price data to **price-cache**, vendors can either us eREST API or JMS
+ * To push uniform-price data to **price-cache**, vendors can either use REST API or JMS
  * Clients can use REST API to retrieve uniform-price data 
  * Core of the system is Camel route that pushes uniform-price data to embedded database
  * Retention policy is ensured by scheduled process which runs once every two minutes. Process removes outdated DB records which are older than 30 days
  * Camel uses Spring governed 2PC transactions backed by Atomikos global transaction manager
- * Integration tests run happy path/failure scenarios using assertions on embedded broker and embedded db records
+ * Integration tests run happy path/failure scenarios using embedded broker and embedded db
    
 #### Future scalability [post-MVP design]
 ![Journey sequence](docs/scaled-overview.jpeg)
